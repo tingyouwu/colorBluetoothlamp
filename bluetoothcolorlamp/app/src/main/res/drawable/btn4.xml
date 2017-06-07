@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+            <item>
+                <shape android:shape="oval" >
+                    <corners android:radius="@dimen/size90" />
+
+                    <solid android:color="@color/btnFourColor" />
+
+                    <size
+                        android:height="50dp"
+                        android:width="50dp" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+
+</layer-list>
