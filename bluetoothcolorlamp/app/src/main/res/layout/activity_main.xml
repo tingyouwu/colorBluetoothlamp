@@ -2,192 +2,270 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="@mipmap/lamp_gray"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="300dp"
+    <com.wty.app.bluetoothcolorlamp.widget.SquareLayout
+        android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="25dp"
-        android:layout_marginTop="25dp" >
+        android:layout_gravity="center_horizontal">
 
         <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
             android:id="@+id/center"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_centerInParent="true"
-            android:background="@drawable/btn1"
+            android:background="@color/red"
             app:riv_oval="true"
             app:riv_mutate_background="true"
             app:riv_border_color="@color/white"/>
 
         <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
-            android:id="@+id/Button01"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentTop="true"
+            android:id="@+id/icon11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_centerHorizontal="true"
-            android:background="@color/green"
+            android:layout_above="@id/center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/btnOneColor"
             app:riv_oval="true"
             app:riv_mutate_background="true"
             app:riv_border_color="@color/white"/>
 
         <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
-            android:id="@+id/Button03"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentLeft="true"
+            android:id="@+id/icon13"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_centerVertical="true"
-            android:background="@color/green"
+            android:layout_toLeftOf="@id/center"
+            android:layout_marginRight="20dp"
+            android:background="@color/btnThreeColor"
             app:riv_oval="true"
             app:riv_mutate_background="true"
             app:riv_border_color="@color/white"/>
 
         <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
-            android:id="@+id/Button05"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
+            android:id="@+id/icon15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_centerHorizontal="true"
-            android:background="@color/green"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/center"
+            android:background="@color/btnFiveColor"
             app:riv_oval="true"
             app:riv_mutate_background="true"
             app:riv_border_color="@color/white"/>
 
         <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
-            android:id="@+id/Button07"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentRight="true"
+            android:id="@+id/icon17"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/center"
+            android:layout_marginLeft="20dp"
+            android:background="@color/btnSevenColor"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon18"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/icon17"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/icon11"
+            android:background="@color/btnEightColor"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/icon13"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/icon11"
+            android:background="@color/btnTwoColor"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon14"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/icon13"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/icon15"
+            android:background="@color/btnFourColor"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon16"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/icon17"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/icon15"
+            android:background="@color/btnSixColor"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/icon13"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorDeepOrangePrimary"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon210"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/icon17"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/colorCyanPrimary"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon211"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/icon18"
+            android:layout_alignTop="@+id/icon18"
+            android:layout_marginLeft="@dimen/shapeSize1"
+            android:background="@color/colorPinkPrimary"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon29"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/icon16"
+            android:layout_alignTop="@+id/icon16"
+            android:layout_marginLeft="@dimen/shapeSize1"
+            android:background="@color/colorLimePrimary"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon27"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/icon15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorGreenPrimaryDark"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon21"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/icon11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorBlueAccent"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon23"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/colorBluePrimary"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"
+            android:layout_toLeftOf="@id/icon12"
+            android:layout_marginRight="@dimen/shapeSize1"
+            android:layout_alignTop="@id/icon12"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon22"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/icon12"
+            android:layout_marginBottom="@dimen/shapeSize1"
+            android:layout_alignLeft="@+id/icon12"
+            android:background="@color/colorBrownPrimary"
+            app:riv_oval="true"
+            app:riv_mutate_background="true"
+            app:riv_border_color="@color/white"/>
+
+        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
+            android:id="@+id/icon212"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/icon18"
+            android:layout_alignRight="@+id/icon18"
+            android:layout_marginBottom="@dimen/shapeSize1"
             android:background="@color/green"
             app:riv_oval="true"
             app:riv_mutate_background="true"
             app:riv_border_color="@color/white"/>
 
         <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
-            android:id="@+id/Button08"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_above="@+id/Button07"
-            android:layout_marginBottom="@dimen/shapeSize"
-            android:layout_marginLeft="@dimen/shapeSize"
-            android:layout_toRightOf="@+id/Button01"
+            android:id="@+id/icon25"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/shapeSize1"
+            android:layout_toLeftOf="@+id/icon14"
+            android:layout_alignBottom="@+id/icon14"
             android:background="@color/green"
             app:riv_oval="true"
             app:riv_mutate_background="true"
             app:riv_border_color="@color/white"/>
 
         <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
-            android:id="@+id/Button02"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_above="@+id/Button03"
-            android:layout_marginBottom="@dimen/shapeSize"
-            android:layout_marginRight="@dimen/shapeSize"
-            android:layout_toLeftOf="@+id/Button01"
-            android:background="@color/green"
+            android:id="@+id/icon26"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/shapeSize1"
+            android:layout_below="@+id/icon14"
+            android:layout_alignLeft="@+id/icon14"
+            android:background="@color/colorIndigoPrimary"
             app:riv_oval="true"
             app:riv_mutate_background="true"
             app:riv_border_color="@color/white"/>
 
         <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
-            android:id="@+id/Button04"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/Button03"
-            android:layout_marginRight="@dimen/shapeSize"
-            android:layout_marginTop="@dimen/shapeSize"
-            android:layout_toLeftOf="@+id/Button05"
-            android:background="@color/green"
+            android:id="@+id/icon28"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/shapeSize1"
+            android:layout_below="@+id/icon16"
+            android:layout_alignRight="@+id/icon16"
+            android:background="@color/colorRedPrimary"
             app:riv_oval="true"
             app:riv_mutate_background="true"
             app:riv_border_color="@color/white"/>
 
-        <com.wty.app.bluetoothcolorlamp.widget.roundedimageview.RoundedImageView
-            android:id="@+id/Button06"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/Button07"
-            android:layout_marginLeft="@dimen/shapeSize"
-            android:layout_marginTop="@dimen/shapeSize"
-            android:layout_toRightOf="@+id/Button05"
-            android:background="@color/green"
-            app:riv_oval="true"
-            app:riv_mutate_background="true"
-            app:riv_border_color="@color/white"/>
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/textRed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="50dp"
-            android:text="@string/textRed"
-            android:textColor="@color/textColor" />
-
-        <SeekBar
-            android:id="@+id/seekBarRed"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:duplicateParentState="true"
-            android:indeterminate="false"
-            android:max="255" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/textGreen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="50dp"
-            android:text="@string/textGreen"
-            android:textColor="@color/textColor" />
-
-        <SeekBar
-            android:id="@+id/seekBarGreen"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:indeterminate="false"
-            android:max="255" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/textBlue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="50dp"
-            android:text="@string/textBlue"
-            android:textColor="@color/textColor" />
-
-        <SeekBar
-            android:id="@+id/seekBarBlue"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:indeterminate="false"
-            android:max="255" />
-    </LinearLayout>
+    </com.wty.app.bluetoothcolorlamp.widget.SquareLayout>
 
 </LinearLayout>

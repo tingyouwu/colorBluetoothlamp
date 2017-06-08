@@ -6,6 +6,7 @@
 
     <dimen name="size90">90dp</dimen>
     <dimen name="shapeSize">8dp</dimen>
+    <dimen name="shapeSize1">15dp</dimen>
 
     <dimen name="colorSize">50dp</dimen>
 
